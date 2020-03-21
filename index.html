@@ -4,20 +4,31 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta charset=”utf-8”> <!-- allows special characters used in BootStrap to be parsed properly -->
+
+	<!-- utf-8 allows special characters used in BootStrap to be parsed properly -->
+	<meta charset=”utf-8”>
 	<title>Jonas Kofod</title>
+
+	<!-- add fonts from googleapis -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,200,300' rel='stylesheet' type='text/styles'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,200,300' rel='stylesheet' type='text/css'>
+
+	<!-- -->
 	<script src="https://use.typekit.net/cog6pmn.js"></script>
+
+	<!-- -->
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<!-- load to stylesheets -->
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
 	<script src="js2/modernizr.custom.js"></script>
 
-	 <!-- Load local jQuery -->
-    <script src="libs/jquery-loader.js"></script>
+	 <!-- load local jQuery -->
+  <script src="libs/jquery-loader.js"></script>
 
-    <!-- Load local lib and tests -->
+    <!-- load local lib and tests -->
     <link rel="stylesheet" href="src/remodal.css">
     <link rel="stylesheet" href="src/remodal-default-theme.css">
     <script src="src/remodal.js"></script>
@@ -46,15 +57,15 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-			<a class="navbar-brand name scrollup" href="index.html#">Jonas Kofod</a>
+			<a class="navbar-brand name scrollup" href="#">Jonas Kofod</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav navbar-right">
-			 <li><a class="name" href="index.html#interests">Interests</a></li>
-			 <li><a class="name" href="index.html#projects">Projects</a></li>
-			 <li><a class="name" href="index.html#say-hello">Say Hello</a></li>
+			 <li><a class="name" href="#interests">Interests</a></li>
+			 <li><a class="name" href="#projects">Projects</a></li>
+			 <li><a class="name" href="#say-hello">Say Hello</a></li>
 		  </ul>
 		</div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -65,9 +76,8 @@
 			<div class="row no-gutter">
 				<div class="col-sm-7">
 					<p class="fade">Hello there,<br><br>
-					I'm Jonas. Hello there,
-					Studying Software Development at ITU in Copenhagen.
-					Currently searching for new challenges.
+					I'm Jonas. Studying <a class="coral-link" href="https://en.itu.dk/programmes/msc-programmes/software-design" target="_blank">Software Design</a> at IT University of Copenhagen.
+					Currently looking for new challenges.
 				</div>
 			</div>
 		</div>
@@ -76,66 +86,81 @@
 	<div id="interests">
 				<ul class="grid cs-style-3">
 						<li>
+
+							<!-- IT Security -->
 							<figure>
-								<a href="index.html#" data-remodal-target="it_security"><img src="pics/IT_security.png"></a>
+								<a href="#" data-remodal-target="security"><img src="pics/security.jpg"></a>
 								<figcaption>
-									<h3>IT Security</h3>
+									<h3>IT-Security</h3>
 									<span>
+										<p class="description">Security in small and medium size businesses</p>
 										<ul class="tags">
-											<li>Research in SMBs</li>
-											<li>Guidance</li>
-											<li>Help</li>
+											<li>Guidance to SMBs</li>
+											<li>Masters Research Project</li>
 										</ul>
 									</span>
+									<a class="btn" href="Research_Security_Project.pdf" data-remodal-target="security">See more</a>
 								</figcaption>
 							</figure>
 						</li>
+
+						<!-- Web Development -->
 						<li>
 							<figure>
-								<a href="index.html#" data-remodal-target="web_development"><img src="pics/web.png"></a>
+								<a href="#" data-remodal-target="web"><img src="pics/web.jpg"></a>
 								<figcaption>
 									<h3>Web Development</h3>
 									<span>
+										<p class="description">Design and creativity is my passion</p>
 										<ul class="tags">
 											<li>Web Design</li>
-											<li>Graphic</li>
+											<li>w3schools.com</li>
 											<li>Design</li>
 										</ul>
 									</span>
+									<a class="btn" href="https://www.w3schools.com/whatis/" data-remodal-target="web">See more</a>
 								</figcaption>
 							</figure>
 						</li>
+
+						<!-- Android Studio -->
 						<li>
 							<figure>
-								<a href="index.html#" data-remodal-target="android"><img src="pics/android.png"></a>
+								<a href="#" data-remodal-target="android"><img src="pics/android.png"></a>
 								<figcaption>
 									<h3>Android Studio</h3>
 									<span>
+										<p class="description">Android mobile application development</p>
 										<ul class="tags">
 											<li>Product Design</li>
 											<li>Mobile Apps</li>
+											<li>App Development</li>
 										</ul>
 									</span>
+									<a class="btn" href="https://developer.android.com/studio" data-remodal-target="android">See more</a>
 								</figcaption>
 							</figure>
 						</li>
+
+						<!-- Web Development -->
 						<li>
 							<figure>
-								<a href="index.html#" data-remodal-target="flutter"><img src="pics/React.png"></a>
+								<a href="#" data-remodal-target="react"><img src="pics/react.jpg"></a>
 								<figcaption>
-									<h3>Flutter</h3>
+									<h3>React</h3>
 									<span>
+										<p class="description">React framework for web development</p>
 										<ul class="tags">
-											<li>Cross Platform</li>
-											<li>IOS</li>
-											<li>Android</li>
+											<li>JavaScript library</li>
+											<li>Component-Based</li>
+											<li>Framework</li>
 										</ul>
 									</span>
+									<a class="btn" href="https://reactjs.org/" data-remodal-target="react">See more</a>
 								</figcaption>
 							</figure>
 						</li>
 	</div>
-
 
 	<div id="projects">
 		<div class="container">
@@ -144,6 +169,7 @@
 					<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
 				</div>
 				<div class="row no-gutter">
+
 					<!-- IT Security -->
 					<div class="col-md-2 col-md-offset-2">
 						<p class="sub-header">IT Security</p>
@@ -158,9 +184,10 @@
 					<div class="col-md-7"><p class="title">Reflect an Web App</p>
 					</div>
 					<div class="col-md-7 col-md-offset-4"><p class="sub-title"><a class="lightgrey-link"></a> From Jan 2020 to Present</p></div>
-					<!-- App Development in Flutter-->
+
+					<!-- App Development in React-->
 					<div class="col-md-2 col-md-offset-2">
-						<p class="sub-header">App Development in Flutter</p>
+						<p class="sub-header">App Development in React</p>
 					</div>
 					<div class="col-md-7">
 						<p class="title">Self Learning Project</p>
@@ -179,8 +206,7 @@
 				<div class="row no-gutter">
 					<div class="col-md-8 col-md-offset-2"><p class="header">Say Hello</p></div>
 					<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
-					<div class="col-md-8 col-md-offset-2"><p>Say hello at Jonaskofod@protonmail.com</a> or connect on <a class="coral-link" href="https://www.linkedin.com/in/jonas-j%C3%B8rgensen/" target="_blank">LinkedIn</a>.</p></div>
-
+					<div class="col-md-8 col-md-offset-2"><p>Say hello at <a class="coral-link" href="mailto:Jonaskofod@protonmail.com?Subject=Saying%20Hello">Jonaskofod@protonmail.com</a> or connect on <a class="coral-link" href="https://www.linkedin.com/in/jonas-j%C3%B8rgensen/" target="_blank">LinkedIn</a>.</p></div>
             </div>
 
 

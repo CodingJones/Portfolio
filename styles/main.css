@@ -284,8 +284,7 @@ a.btn:hover, a.btn:focus {
 }
 
 .grid figure img {
-	width: 500px;
-  height: 320px;
+	max-width:100%;
 	display: block;
 	position: relative;
 }
