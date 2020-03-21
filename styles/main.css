@@ -260,7 +260,7 @@ a.btn:hover, a.btn:focus {
 
 }
 
-/* -------------------- Projects Section --------------------*/
+/* -------------------- Interests Section --------------------*/
 .grid {
 	padding: 0px;
 	max-width: 1300px;
@@ -284,7 +284,8 @@ a.btn:hover, a.btn:focus {
 }
 
 .grid figure img {
-	max-width: 100%;
+	width: 500px;
+  height: 320px;
 	display: block;
 	position: relative;
 }
@@ -388,9 +389,9 @@ ul.tags{
 	max-width: 99%;
 }
 
-/* -------------------- Projects Section --------------------*/
+/* -------------------- Interests Section --------------------*/
 
-#projects {
+#interests {
 	margin: 150px 0px 100px 0px;
 }
 /* -------------------- Say Hello Section --------------------*/
