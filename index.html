@@ -1,92 +1,76 @@
 <DOCTYPE! html>
 
 <html>
+<!--To display an HTML page correctly, a web browser must know which character set to use. -->
+	<meta charset="UTF-8">  <!-- UTF-8 (Unicode) covers almost all of the characters and symbols in the world -->
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-	<!-- utf-8 allows special characters used in BootStrap to be parsed properly -->
-	<meta charset=”utf-8”>
+	<!-- defines a title in the browser toolbar -->
 	<title>Jonas Kofod</title>
-
 	<!-- add fonts from googleapis -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,200,300' rel='stylesheet' type='text/css'>
-
-	<!-- -->
-	<script src="https://use.typekit.net/cog6pmn.js"></script>
-
-	<!-- -->
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-	<!-- load to stylesheets -->
-	<link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'> <!-- navbar text -->
+	<link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet"> <!-- page text-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- load css stylesheets -->
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+
+	<!-- load modernizr. A small JavaScript library that detects the availability of native implementations -->
 	<script src="js2/modernizr.custom.js"></script>
 
-	 <!-- load local jQuery -->
-  <script src="libs/jquery-loader.js"></script>
-
-    <!-- load local lib and tests -->
-    <link rel="stylesheet" href="src/remodal.css">
-    <link rel="stylesheet" href="src/remodal-default-theme.css">
-    <script src="src/remodal.js"></script>
-    <script src="remodal_test.js"></script>
-    <style>
-      .remodal-overlay.without-animation.remodal-is-opening,
-      .remodal-overlay.without-animation.remodal-is-closing,
-      .remodal.without-animation.remodal-is-opening,
-      .remodal.without-animation.remodal-is-closing,
-      .remodal-bg.without-animation.remodal-is-opening,
-      .remodal-bg.without-animation.remodal-is-closing {
-        animation: none;
-      }
-    </style>
+	<!-- Load local lib and tests -->
+	<link rel="stylesheet" href="src/remodal.css">
+	<link rel="stylesheet" href="src/remodal-default-theme.css">
+	<script src="src/remodal.js"></script>
+	<script src="remodal_test.js"></script>
+	<style>
+		.remodal-overlay.without-animation.remodal-is-opening,
+		.remodal-overlay.without-animation.remodal-is-closing,
+		.remodal.without-animation.remodal-is-opening,
+		.remodal.without-animation.remodal-is-closing,
+		.remodal-bg.without-animation.remodal-is-opening,
+		.remodal-bg.without-animation.remodal-is-closing {
+			animation: none;
+		}
+	</style>
 
 </head>
-
 <body id="top">
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container-fluid">
+		<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
-		  </button>
+			</button>
 			<a class="navbar-brand name scrollup" href="#">Jonas Kofod</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav navbar-right">
-			 <li><a class="name" href="#interests">Interests</a></li>
-			 <li><a class="name" href="#projects">Projects</a></li>
-			 <li><a class="name" href="#say-hello">Say Hello</a></li>
-		  </ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a class="name" href="#skills">Skills</a></li>
+			 	<li><a class="name" href="#projects">Projects</a></li>
+			 	<li><a class="name" href="#say-hello">Say Hello</a></li>
+			</ul>
 		</div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
+		</div><!-- /.container-fluid -->
 	</nav>
-
 	<div id="intro">
-		<div class="container">
-			<div class="row no-gutter">
-				<div class="col-sm-7">
-					<p class="fade">Hello there,<br><br>
-					I'm Jonas. Studying <a class="coral-link" href="https://en.itu.dk/programmes/msc-programmes/software-design" target="_blank">Software Design</a> at IT University of Copenhagen.
-					Currently looking for new challenges.
-				</div>
-			</div>
-		</div>
+		<p class="fade">Hello there,<br><br>
+		I'm Jonas. Studying <a class="coral-link" href="https://en.itu.dk/programmes/msc-programmes/software-design" target="_blank">Software Design</a> at IT University of Copenhagen. <br>
+		Currently looking for new challenges.
 	</div>
 
-	<div id="interests">
+	<div id="skills">
 				<ul class="grid cs-style-3">
 						<li>
-
 							<!-- IT Security -->
 							<figure>
 								<a href="#" data-remodal-target="security"><img src="pics/security.jpg"></a>
@@ -99,7 +83,7 @@
 											<li>Masters Research Project</li>
 										</ul>
 									</span>
-									<a class="btn" href="Research_Security_Project.pdf" data-remodal-target="security">See more</a>
+									<a class="btn" href="Research_Security_Project.pdf" target="_blank">See more</a>
 								</figcaption>
 							</figure>
 						</li>
@@ -118,7 +102,7 @@
 											<li>Design</li>
 										</ul>
 									</span>
-									<a class="btn" href="https://www.w3schools.com/whatis/" data-remodal-target="web">See more</a>
+									<a class="btn" href="https://www.w3schools.com/whatis/" target="_blank">See more</a>
 								</figcaption>
 							</figure>
 						</li>
@@ -137,7 +121,7 @@
 											<li>App Development</li>
 										</ul>
 									</span>
-									<a class="btn" href="https://developer.android.com/studio" data-remodal-target="android">See more</a>
+									<a class="btn" href="https://developer.android.com/studio" target="_blank">See more</a>
 								</figcaption>
 							</figure>
 						</li>
@@ -156,7 +140,7 @@
 											<li>Framework</li>
 										</ul>
 									</span>
-									<a class="btn" href="https://reactjs.org/" data-remodal-target="react">See more</a>
+									<a class="btn" href="https://reactjs.org/" target="_blank">See more</a>
 								</figcaption>
 							</figure>
 						</li>
@@ -201,7 +185,7 @@
 		</div>
 	</div>
 
-		<div id="say-hello" class="row">
+		<div id="say-hello">
 		<div class="container">
 				<div class="row no-gutter">
 					<div class="col-md-8 col-md-offset-2"><p class="header">Say Hello</p></div>

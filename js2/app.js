@@ -13,7 +13,7 @@ $(document).on('ready', function() {
 	});
 
 
- 	var winHeight = $(window).height() + 120, 
+ 	var winHeight = $(window).height() + 120,
       docHeight = $(document).height(),
       progressBar = $('progress'),
       max, value;
@@ -21,7 +21,7 @@ $(document).on('ready', function() {
 	$(window).scroll(function(){
     var top = ($(window).scrollTop() > 0) ? $(window).scrollTop() : 1;
     $('.fade').stop(true, true).fadeTo(0, 1 / top);
-    $('.fade').css('top', top * 0.5);             
+    $('.fade').css('top', top * 0.5);
 	});
   /* Set the max scrollable area */
 
@@ -33,7 +33,7 @@ $(document).on('ready', function() {
 	 progressBar.attr('max', max);
 	 console.log(max);
 	});
-	
+
 	   $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
@@ -50,7 +50,7 @@ $(document).on('ready', function() {
     });
 
 	$('.remodal-close').click(function () {
-		
+
 	});
 
 
@@ -74,5 +74,25 @@ $(document).on('ready', function() {
 		return false;
 	});
 
-	
+	/* activate scrollspy menu */
+$('body').scrollspy({
+  target: '#navbar-collapsible',
+  offset: 52
 });
+
+/* smooth scrolling sections */
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 50
+        }, 1000);
+        return false;
+      }
+    }
+});
+
+
+}
