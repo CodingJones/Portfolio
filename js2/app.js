@@ -53,46 +53,37 @@ $(document).on('ready', function() {
 
 	});
 
+	$(document).ready(function(){
+    $(".nav-item").click(function () {
+      $("a.active").removeClass('active');
+      $(this).addClass('active');
+      var active_section = $(this).attr('href'); //get active section id
+      $('html, body').animate({
+      //and scroll to the section
+      scrollTop: $(active_section).offset().top
+      }, 1000);
+    });
 
-	$('body').scrollspy({
-	   offset: 135
-	});
 
-	var offsetHeight = 135;
+   $(document).scroll(function () {
+   //get document scroll position
+     var position = $(document).scrollTop();
+     //get header height
+     var header = $('nav').outerHeight();
 
-	$('#sidebar').scrollspy({
-		offset: offsetHeight
-	});
+     //check active section
+     $('.section').each(function(i) {
+         if($(this).position().top <= (position + header))
+          {
+               $("a.active").removeClass('active');
+               $("a").eq(i).addClass('active');
+          }
+      });
+   });
 
-	$('>li a').click(function (event) {
-		var scrollPos = $('body > .container').find($(this).attr('href')).offset().top - (offsetHeight-1);
-		$('body,html').animate({
-			scrollTop: scrollPos
-		}, 500, function () {
-			$(".btn-navbar").click();
-		});
-		return false;
-	});
+ });
 
-	/* activate scrollspy menu */
-$('body').scrollspy({
-  target: '#navbar-collapsible',
-  offset: 52
+
+
+
 });
-
-/* smooth scrolling sections */
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - 50
-        }, 1000);
-        return false;
-      }
-    }
-});
-
-
-}
