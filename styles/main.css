@@ -102,12 +102,14 @@ a.lightgrey-link:hover:after {
 .header {
 	font-size: 24px;
 	line-height: 10px;
+  margin-left: 40px;
 }
 
 .underline {
 	border-bottom: 3px solid #ee5254;
 	width: 20px;
-	margin-bottom: 60px;
+  margin-left: 40px;
+  margin-bottom: 40px;
 }
 
 .sub-header {
@@ -196,7 +198,7 @@ a.btn:hover, a.btn:focus {
 }
 
 .navbar-default .navbar-nav li > a:hover{
-  color: #ee5254;
+  color: #999;
 }
 
 /* link */
@@ -353,9 +355,9 @@ ul.tags{
 	max-width: 99%;
 }
 
-/* -------------------- Interests Section --------------------*/
+/* -------------------- skills Section --------------------*/
 
-#interests {
+#skills {
 	margin: 150px 0px 100px 0px;
 }
 /* -------------------- Say Hello Section --------------------*/
