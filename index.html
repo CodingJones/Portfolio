@@ -2,8 +2,8 @@
 
 <html>
 <!--To display an HTML page correctly, a web browser must know which character set to use. -->
-	<meta charset="UTF-8">  <!-- UTF-8 (Unicode) covers almost all of the characters and symbols in the world -->
-
+<meta charset="UTF-8">  <!-- UTF-8 (Unicode) covers almost all of the characters and symbols in the world -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 	<!-- defines a title in the browser toolbar -->
 	<title>Jonas Kofod</title>
@@ -16,26 +16,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<!-- load css stylesheets -->
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/bootstrap.min.css">
 
 	<!-- load modernizr. A small JavaScript library that detects the availability of native implementations -->
-	<script src="js2/modernizr.custom.js"></script>
-
-	<!-- Load local lib and tests -->
-	<link rel="stylesheet" href="src/remodal.css">
-	<link rel="stylesheet" href="src/remodal-default-theme.css">
-	<script src="src/remodal.js"></script>
-	<script src="remodal_test.js"></script>
-	<style>
-		.remodal-overlay.without-animation.remodal-is-opening,
-		.remodal-overlay.without-animation.remodal-is-closing,
-		.remodal.without-animation.remodal-is-opening,
-		.remodal.without-animation.remodal-is-closing,
-		.remodal-bg.without-animation.remodal-is-opening,
-		.remodal-bg.without-animation.remodal-is-closing {
-			animation: none;
-		}
-	</style>
+	<script src="js2/modernizr.custom.js"></script> <!-- helps with the picture movement-->
 
 </head>
 <body id="top">
@@ -46,7 +29,7 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a class="name" href="#skills">Skills</a></li>
-			 	<li><a class="name" href="#projects">Projects</a></li>
+			 	<li><a class="name" href="#courses">Courses</a></li>
 			 	<li><a class="name" href="#say-hello">Say Hello</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
@@ -55,19 +38,19 @@
 
 <div id="intro">
 	<div class="container">
-		<div class="row no-gutter">
-			<div class="col-sm-9 col-md-6 col-lg-8">
-				<p class="fade">Hello there,<br><br>
-					I'm Jonas. <br> Studying <a class="coral-link" href="https://en.itu.dk/programmes/msc-programmes/software-design" target="_blank">Software Design</a> at IT University of Copenhagen. <br>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<p class="fade">Hey,<br><br>
+					I'm Jonas. <br> Studying <a class="coral-link" href="https://en.itu.dk/programmes/msc-programmes/software-design" target="_blank">Software Design</a> at ITU. <br>
 					Currently looking for new challenges.
 				</div>
 		</div>
-	</div>
-</div>
+		</div>
+		</div>
 
 	<div id="skills">
 		<div class="container">
-				<div class="row no-gutter">
+				<div class="row">
 					<div class="col-md-8 col-md-offset-2"><p class="header">Skills</p></div>
 					<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
 				</div>
@@ -81,10 +64,10 @@
 								<figcaption>
 									<h3>IT-Security</h3>
 									<span>
-										<p class="description">Security in small and medium size businesses</p>
+										<p class="description">Great knowledge of IT-security in businesses</p>
 										<ul class="tags">
-											<li>Guidance to SMBs</li>
-											<li>Masters Research Project</li>
+											<li>Threat Modeling</li>
+											<li>Best Practices within IT Security</li>
 										</ul>
 									</span>
 									<a class="btn" href="Research_Security_Project.pdf" target="_blank">See more</a>
@@ -101,9 +84,10 @@
 									<span>
 										<p class="description">Design and creativity is my passion</p>
 										<ul class="tags">
-											<li>Web Design</li>
-											<li>w3schools.com</li>
-											<li>Design</li>
+											<li>HTML5</li>
+											<li>CCS3</li>
+											<li>Figma</li>
+											<li>JavaScript</li>
 										</ul>
 									</span>
 									<a class="btn" href="https://www.w3schools.com/whatis/" target="_blank">See more</a>
@@ -116,13 +100,13 @@
 							<figure>
 								<a href="#" data-remodal-target="android"><img src="pics/android.png"></a>
 								<figcaption>
-									<h3>Android Studio</h3>
+									<h3>App Development</h3>
 									<span>
-										<p class="description">Android mobile application development</p>
+										<p class="description">Mobile application development</p>
 										<ul class="tags">
-											<li>Product Design</li>
-											<li>Mobile Apps</li>
-											<li>App Development</li>
+											<li>Android Studio</li>
+											<li>Java</li>
+											<li>Back-end</li>
 										</ul>
 									</span>
 									<a class="btn" href="https://developer.android.com/studio" target="_blank">See more</a>
@@ -130,18 +114,18 @@
 							</figure>
 						</li>
 
-						<!-- Web Development -->
+						<!-- React  -->
 						<li>
 							<figure>
 								<a href="#" data-remodal-target="react"><img src="pics/react.jpeg"></a>
 								<figcaption>
 									<h3>React</h3>
 									<span>
-										<p class="description">React framework for web development</p>
+										<p class="description">React for building user interfaces</p>
 										<ul class="tags">
-											<li>JavaScript library</li>
+											<li>JavaScript</li>
 											<li>Component-Based</li>
-											<li>Framework</li>
+											<li>Front-end</li>
 										</ul>
 									</span>
 									<a class="btn" href="https://reactjs.org/" target="_blank">See more</a>
@@ -150,49 +134,40 @@
 						</li>
 	</div>
 
+<div id="courses">
+	<div class="container">
+			<div class="row no-gutter">
+				<div class="col-md-8 col-md-offset-2"><p class="header">Courses</p></div>
+				<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
+				<div class="col-md-4 col-md-offset-2"><p>
+				<i>	- Introductory Programming, <br></i>
+				<i>	- Discrete Mathematics, <br></i>
+				<i>	- Software Engineering and Software Qualities, <br></i>
+				<i>	- Algorithms and Data Structures, <br></i>
+				<i>	- Introduction to Database Design, <br></i>
+				<i>	- Technical Interaction Design, <br></i>
+				<i>	- Cross-Disciplinary Teamwork, <br></i>
+				<i>	- Applied Information Security, <br></i>
+				<i> - Frameworks and Architectures for the Web, <br><i/>
+				<i> - Mobile App Development
+				</p></div>
 
-	<div id="projects">
-		<div class="container">
-				<div class="row no-gutter">
-					<div class="col-md-8 col-md-offset-2"><p class="header">Projects</p></div>
-					<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
+				<div class="col-md-push-4">
 				</div>
-				<div class="row no-gutter">
+			</div>
+		</div>
+</div>
 
-					<!-- IT Security -->
-					<div class="col-md-2 col-md-offset-2">
-						<p class="sub-header">IT Security</p>
-					</div>
-					<div class="col-md-7"><p class="title">Securing Small Businessess</p></div>
-					<div class="col-md-7 col-md-offset-4"><p class="sub-title"><a class="lightgrey-link"></a> From Jan 2020 to Present</p></div>
 
-					<!-- Web Development-->
-					<div class="col-md-2 col-md-offset-2">
-						<p class="sub-header">Web Dev</p>
-					</div>
-					<div class="col-md-7"><p class="title">Reflect an Web App</p>
-					</div>
-					<div class="col-md-7 col-md-offset-4"><p class="sub-title"><a class="lightgrey-link"></a> From Jan 2020 to Present</p></div>
-
-					<!-- Web App Development in React-->
-					<div class="col-md-2 col-md-offset-2">
-						<p class="sub-header">React</p>
-					</div>
-					<div class="col-md-7">
-						<p class="title">Self Learning Project</p>
-					</div>
-					<div class="col-md-7 col-md-offset-4">
-						<p class="sub-title"><a class="lightgrey-link"></a>From Sep 2019 to Present</p>
-					</div>
-
-		<div id="say-hello">
-		<div class="container">
-				<div class="row no-gutter">
-					<div class="col-md-8 col-md-offset-2"><p class="header">Say Hello</p></div>
-					<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
-					<div class="col-md-8 col-md-offset-2"><p>Say hello at <a class="coral-link" href="mailto:Jonaskofod@protonmail.com?Subject=Saying%20Hello">Jonaskofod@protonmail.com</a> or connect on <a class="coral-link" href="https://www.linkedin.com/in/jonas-j%C3%B8rgensen/" target="_blank">LinkedIn</a>.</p></div>
-            </div>
-
+<div id="say-hello" class="row">
+<div class="container">
+		<div class="row no-gutter">
+			<div class="col-md-8 col-md-offset-2"><p class="header">Say Hello</p></div>
+			<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
+				<div class="col-md-8 col-md-offset-2"><p>Say hello at <a class="coral-link" href="mailto:Jonaskofod@protonmail.com?Subject=Saying%20Hello">Jonaskofod@protonmail.com</a> or connect on <a class="coral-link" href="https://www.linkedin.com/in/jonas-j%C3%B8rgensen/" target="_blank">LinkedIn</a>.</p></div>
+</div>
+</div>
+</div>
 
 	<script src="js2/jquery.min.js"></script>
 	<script src="js2/bootstrap.min.js"></script>
