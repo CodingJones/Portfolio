@@ -1,26 +1,3 @@
-@font-face {
-font-family: ProximaNova-Thin;
-src: url("../fonts/ProximaNova-Thin.otf") format("opentype");
-}
-
-@font-face {
-font-family: ProximaNova-Light;
-src: url("../fonts/ProximaNova-Light.otf") format("opentype");
-}
-
-
-@font-face {
-font-family: ProximaNova-Regular;
-src: url("../fonts/ProximaNova-Regular.otf") format("opentype");
-}
-
-
-@font-face {
-font-family: ProximaNova-Semibold;
-src: url("../fonts/ProximaNova-Semibold.otf") format("opentype");
-}
-
-
 [class*='col-'] {
     padding-right:0;
     padding-left:0;
