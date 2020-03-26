@@ -13,7 +13,7 @@ $(document).on('ready', function() {
 	});
 
 
- 	var winHeight = $(window).height() + 120,
+ 	var winHeight = $(window).height() + 120, 
       docHeight = $(document).height(),
       progressBar = $('progress'),
       max, value;
@@ -21,10 +21,11 @@ $(document).on('ready', function() {
 	$(window).scroll(function(){
     var top = ($(window).scrollTop() > 0) ? $(window).scrollTop() : 1;
     $('.fade').stop(true, true).fadeTo(0, 1 / top);
-    $('.fade').css('top', top * 0.5);
+    $('.fade').css('top', top * 0.5);             
 	});
-
   /* Set the max scrollable area */
+
+
 	$(document).on('scroll', function(){
      value = $(window).scrollTop();
      progressBar.attr('value', value);
@@ -32,8 +33,8 @@ $(document).on('ready', function() {
 	 progressBar.attr('max', max);
 	 console.log(max);
 	});
-
-	$(window).scroll(function () {
+	
+	   $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
         } else {
@@ -49,40 +50,29 @@ $(document).on('ready', function() {
     });
 
 	$('.remodal-close').click(function () {
-
+		
 	});
 
-	$(document).ready(function(){
-    $(".nav-item").click(function () {
-      $("a.active").removeClass('active');
-      $(this).addClass('active');
-      var active_section = $(this).attr('href'); //get active section id
-      $('html, body').animate({
-      //and scroll to the section
-      scrollTop: $(active_section).offset().top
-      }, 1000);
-    });
 
+	$('body').scrollspy({
+	   offset: 135
+	});
 
-   $(document).scroll(function () {
-   //get document scroll position
-     var position = $(document).scrollTop();
-     //get header height
-     var header = $('nav').outerHeight();
+	var offsetHeight = 135;
 
-     //check active section
-     $('.section').each(function(i) {
-         if($(this).position().top <= (position + header))
-          {
-               $("a.active").removeClass('active');
-               $("a").eq(i).addClass('active');
-          }
-      });
-   });
+	$('#sidebar').scrollspy({
+		offset: offsetHeight
+	});
 
- });
+	$('>li a').click(function (event) {
+		var scrollPos = $('body > .container').find($(this).attr('href')).offset().top - (offsetHeight-1);
+		$('body,html').animate({
+			scrollTop: scrollPos
+		}, 500, function () {
+			$(".btn-navbar").click();
+		});
+		return false;
+	});
 
-
-
-
+	
 });
