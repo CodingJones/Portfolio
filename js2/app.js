@@ -23,9 +23,8 @@ $(document).on('ready', function() {
     $('.fade').stop(true, true).fadeTo(0, 1 / top);
     $('.fade').css('top', top * 0.5);
 	});
+
   /* Set the max scrollable area */
-
-
 	$(document).on('scroll', function(){
      value = $(window).scrollTop();
      progressBar.attr('value', value);
@@ -34,7 +33,7 @@ $(document).on('ready', function() {
 	 console.log(max);
 	});
 
-	   $(window).scroll(function () {
+	$(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
         } else {
