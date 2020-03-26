@@ -251,6 +251,7 @@ a.btn:hover, a.btn:focus {
 	padding: 15px;
 	background: #fff;
 	color: #999;
+  max-width:100%;
   font-family: "Source Sans Pro",sans-serif;
 	font-style: normal;
 	font-weight: 300;
