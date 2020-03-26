@@ -349,13 +349,14 @@ ul.tags{
 
 /* ------- margin to sections -------- */
 
+/* margin on courses */
 #courses {
   margin-top: 150px;
   margin-bottom: 100px;
   margin-left: 0px;
 }
 
-
+/* courses header styling */
 p.courses-header {
   font-family: "Source Sans Pro",sans-serif;
   font-style: normal;
@@ -379,10 +380,12 @@ ul.courses {
   color: #333;
 }
 
+/* margin of list items */
 ul.courses li{
   margin-bottom: 10px;
 }
 
+/*  checkmarks on list items */ 
 ul.courses li:before {
    content:"\2713\0020";
    margin-right: 10px;
