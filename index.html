@@ -20,6 +20,22 @@
 	<!-- load modernizr. A small JavaScript library that detects the availability of native implementations -->
 	<script src="js2/modernizr.custom.js"></script> <!-- helps with the picture movement-->
 
+	<!-- Load local lib and tests --> <!-- used for picture animation on mobile device to open and closing-->
+	<link rel="stylesheet" href="src/remodal.css">
+	<link rel="stylesheet" href="src/remodal-default-theme.css">
+	<script src="src/remodal.js"></script>
+	<script src="remodal_test.js"></script>
+	<style>
+		.remodal-overlay.without-animation.remodal-is-opening,
+		.remodal-overlay.without-animation.remodal-is-closing,
+		.remodal.without-animation.remodal-is-opening,
+		.remodal.without-animation.remodal-is-closing,
+		.remodal-bg.without-animation.remodal-is-opening,
+		.remodal-bg.without-animation.remodal-is-closing {
+			animation: none;
+		}
+	</style>
+
 </head>
 <body id="top">
 	<nav class="navbar navbar-default navbar-fixed-top">
