@@ -1,6 +1,8 @@
+
+
 [class*='col-'] {
     padding-right:0;
-    padding-left:0;
+    padding-left:20px;
 }
 
 body {
@@ -21,7 +23,7 @@ p {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
-	line-height: 28px;
+	line-height: 36px;
 	color: #333;
 }
 
@@ -59,7 +61,6 @@ a.coral-link:hover:after {
 .header {
 	font-size: 24px;
 	line-height: 10px;
-
 }
 
 /* header underline */
@@ -113,15 +114,18 @@ a.btn:hover, a.btn:focus {
 
 
 /* -------------------- The Nav Bar --------------------*/
+.navbar-right {
+	padding-right: 100px;
+}
 
 /* padding between links */
 .navbar-right li a.name {
-	padding-left: 30px;
+	padding-left: 40px;
 }
 
 /* padding on the right of the links */
 .nav {
-	padding-right: 30px;
+	padding-right: 25px;
 }
 
 /* navbar box color*/
@@ -137,7 +141,7 @@ a.btn:hover, a.btn:focus {
 	color: #999;
 	letter-spacing: 4px;
 	text-transform: uppercase;
-	padding-left: 30px;
+	padding-left: 40px;
 	font-weight: 400;
 }
 /* change of color of title Jonas Kofod when hover and focus */
@@ -146,15 +150,7 @@ a.btn:hover, a.btn:focus {
 	color: #ee5254;
 }
 
-/* no change of color when hover or focus*/
-.navbar-default .navbar-nav li.active,
-.navbar-default .navbar-nav li > a:focus{
-  color: #999;
-}
 
-.navbar-default .navbar-nav > li > a:hover{
-    color: #ee5254;
-}
 
 /* link */
 .navbar-default .navbar-nav > li > a {
@@ -164,6 +160,30 @@ a.btn:hover, a.btn:focus {
 	text-transform: uppercase;
 	font-size: 10px;
 	letter-spacing: 4px;
+}
+
+/* no change of color when hover or focus*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #999;
+}
+
+/* change to red when hover */
+.navbar-default .navbar-nav > li > a:hover{
+    color: #ee5254;
+}
+
+/* say hello no change of color when hover or focus*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #999;
+    background-color: rgba(250, 250, 250, 0.96);
+}
+
+/* say hello turns red when hover */
+.navbar-default .navbar-nav > .active > a:hover{
+  color: #ee5254;
+  background-color: rgba(250, 250, 250, 0.96);
 }
 
 /* -------------------- Intro Section --------------------*/
@@ -185,7 +205,8 @@ a.btn:hover, a.btn:focus {
 /* -------------------- Skills Section --------------------*/
 
 #skills {
-	margin: 150px 0px 100px 0px;
+  margin-bottom: 100px;
+  margin-left: 0px;
 }
 
 /* gird for the pictures */
@@ -329,9 +350,49 @@ ul.tags{
 /* ------- margin to sections -------- */
 
 #courses {
-  margin: 150px 0px 100px 0px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 0px;
 }
 
-#say-hello {
-	margin: 150px 0px 200px 0px;
+
+p.courses-header {
+  font-family: "Source Sans Pro",sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 100;
+  color: #333;
+	line-height: 30px;
+  padding-bottom: 10px;
+}
+
+/* unordered list courses */
+ul.courses {
+	list-style-type: none;
+  margin: 0px;
+	padding: 10px;
+  font-family: "Source Sans Pro",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 36px;
+  color: #333;
+}
+
+ul.courses li{
+  margin-bottom: 10px;
+}
+
+ul.courses li:before {
+   content:"\2713\0020";
+   margin-right: 10px;
+ }
+
+
+
+
+#sayhello {
+	margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 0px;
 }
