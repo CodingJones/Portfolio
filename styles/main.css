@@ -363,7 +363,7 @@ p.status-courses {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 36px;
+	line-height: 18px;
 	color: #333;
 }
 
@@ -381,7 +381,7 @@ ul.courses {
 
 /* space between list items */
 ul.courses li{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /*  checkmarks on list items */
@@ -405,7 +405,7 @@ ul.halfdone-courses{
 
 /* space between list items */
 ul.halfdone-courses li{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /* list points circle */
@@ -450,7 +450,7 @@ a.btn {
 	display: inline;
 	font-size: 12px;
 	transition: all 0.4s ease 0s;
-	font-weight: 300;
+	font-weight: 350;
 }
 
 /* Project tags */
