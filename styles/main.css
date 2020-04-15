@@ -361,8 +361,7 @@ p.courses-header {
 p.status-courses {
 	font-family: "Source Sans Pro",sans-serif;
 	font-style: normal;
-  text-decoration: underline;
-	font-weight: 100;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 36px;
 	color: #333;
