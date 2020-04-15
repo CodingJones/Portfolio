@@ -139,10 +139,8 @@ a.btn:hover, a.btn:focus{
 /* change of color of title Jonas Kofod when hover and focus */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-	color: #ee5254;
+	color: #ee5254
 }
-
-
 
 /* link */
 .navbar-default .navbar-nav > li > a {
@@ -255,13 +253,21 @@ ul.tags{
 	padding: 0px;
 }
 
-/* picture skills tags */
+/* Projec tags */
 .tags li {
 	display: inline;
-	margin-right: 5px;
+	margin-right: 1px;
 	padding: 5px 10px;
 	border: 1px solid #ccc;
-	border-radius: 5px;
+	border-radius: 1px;
+	left: 5px;
+}
+
+/* position of see more button */
+.cs-style-3 figcaption a {
+	position: absolute;
+	bottom: 13px;
+	right: 20px;
 }
 
 /* picture title */
@@ -330,13 +336,6 @@ ul.tags{
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
-}
-
-/* position of see more button */
-.cs-style-3 figcaption a {
-	position: absolute;
-	bottom: 26px;
-	right: 20px;
 }
 
 /* ------- margin to sections -------- */
@@ -420,7 +419,6 @@ ul.halfdone-courses li:before {
 	margin-top: 150px;
   margin-bottom: 300px;
   margin-left: 0px;
-  margin-right:170px;
 }
 
 /* ------------- Mobile phones --------------- */
@@ -428,8 +426,8 @@ ul.halfdone-courses li:before {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
-    padding-right:0;
-    padding-left:20px;
+    padding-right:60px;
+    padding-left:60px;
 }
 
 /* picture text in the grid */
@@ -447,28 +445,30 @@ a.btn {
 	text-align: center;
 	color: #ee5254;
 	border: 1px solid #ee5254;
-	border-radius: 40px;
+	border-radius: 20px;
 	padding: 5px 10px;
 	margin: 0 auto;
 	display: inline;
-	font-size: 10px;
+	font-size: 12px;
 	transition: all 0.4s ease 0s;
 	font-weight: 300;
 }
 
-/* picture skills tags */
+/* Project tags */
 .tags li {
 	display: inline;
-	margin-right: 5px;
-	padding: 5px 10px;
+	margin-right: 1px;
+	padding: 3px 6px;
 	border: 1px solid #ccc;
-	border-radius: 5px;
+	border-radius: 1px;
+	left: 5px
 }
 
 /* position of see more button */
 .cs-style-3 figcaption a {
 	position: absolute;
-	bottom: 70px;
+	bottom: 12px;
 	right: 20px;
 }
+
 }
