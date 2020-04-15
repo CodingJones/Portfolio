@@ -471,4 +471,29 @@ a.btn {
 	right: 20px;
 }
 
+/* picture size */
+.grid figure img {
+	max-width:100%;
+	display: block;
+	position: relative;
+	transform: translate(0, -50px);
+}
+
+/* text under picture */
+.cs-style-3 figcaption {
+	height: 120px;
+	width: 100%;
+	top: auto;
+}
+
+/* figure transform on hover */
+.cs-style-3 figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: display(0px);
+}
+
+
 }
