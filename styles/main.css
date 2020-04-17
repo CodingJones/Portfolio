@@ -106,6 +106,7 @@ a.btn:hover, a.btn:focus{
 }
 
 /* -------------------- The Nav Bar --------------------*/
+/* navbar-right padding */
 .navbar-right {
 	padding-right: 100px;
 }
