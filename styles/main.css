@@ -87,13 +87,10 @@ a.coral-link:hover:after {
 
 /* See more button styling */
 a.btn {
-	text-align: center;
 	color: #ee5254;
 	border: 1px solid #ee5254;
 	border-radius: 40px;
 	padding: 10px 20px;
-	margin: 0 auto;
-	display: inline;
 	font-size: 14px;
 	transition: all 0.4s ease 0s;
 	font-weight: 300;
@@ -346,7 +343,7 @@ ul.halfdone-courses li{
 /* list points circle */
 ul.halfdone-courses li:before {
     content: '〇';
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 #sayhello {
@@ -366,22 +363,17 @@ ul.halfdone-courses li:before {
 /* picture text in the grid */
 .grid li {
 	display: inline-block;
-	max-width: 80%;
+	max-width: 90%;
   margin-bottom: 10px;
-	padding: 0px;
-	text-align: left;
-	position: relative;
 }
 
 /* styling of see more button */
 a.btn {
-	text-align: center;
+  left: 20px;
 	color: #ee5254;
 	border: 1px solid #ee5254;
 	border-radius: 20px;
 	padding: 5px 10px;
-	margin: 0 auto;
-	display: inline;
 	font-size: 12px;
 	transition: all 0.4s ease 0s;
 	font-weight: 350;
@@ -389,12 +381,7 @@ a.btn {
 
 /* Project tags */
 .tags li {
-	display: inline;
-	margin-right: 1px;
-	padding: 3px 6px;
-	border: 1px solid #ccc;
-	border-radius: 1px;
-	left: 5px
+	display: none;
 }
 
 #intro {
@@ -414,7 +401,7 @@ a.btn {
 .intro {
 	position: relative;
 	opacity: 2;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 34px;
 	font-family: "Source Sans Pro",sans-serif;
 	font-style: normal;
@@ -437,39 +424,39 @@ a.btn {
 
 /* header style */
 .header {
-	font-size: 20px;
-	line-height: 10px;
-	margin-left: 20px;
+	font-size: 18px;
+	line-height: 0px;
+	margin-left: 10px;
 }
 
 /* header underline */
 .underline {
-	border-bottom: 3px solid #ee5254;
+	border-bottom: 2px solid #ee5254;
 	width: 20px;
 	margin-bottom: 20px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 /* courses header styling */
 p.courses-header {
   font-family: "Source Sans Pro",sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
   color: #333;
 	line-height: 30px;
   padding-bottom: 10px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 p.status-courses {
 	font-family: "Source Sans Pro",sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 18px;
 	color: #333;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 /* unordered list courses */
@@ -482,7 +469,7 @@ ul.courses {
   font-weight: 200;
   font-size: 14px;
   color: #333;
-	margin-left: 20px;
+
 }
 
 /* unordered list of halfdone courses */
@@ -496,5 +483,22 @@ ul.halfdone-courses{
   font-weight: 200;
   font-size: 14px;
   color: #333;
-	margin-left: 20px;
+}
+
+/* picture title */
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0px 0px 0px 10px;
+  font-family: "Source Sans Pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #333;
+}
+
+/* picture description */
+.grid figcaption .description {
+	font-size: 14px;
+	padding: 0px 0px 0px 10px;
+	color: #999;
 }
