@@ -230,6 +230,7 @@ a.btn:hover, a.btn:focus{
 	max-width:100%;
 	display: block;
 	position: relative;
+	transform: translate(0, -50px);
 }
 
 /* picture grid styles */
@@ -300,8 +301,9 @@ ul.tags{
 	width: 100%;
 	top: auto;
 	bottom: 0;
-	opacity: 0;
+	opacity: 1;
 }
+
 
 /* ------- margin to sections -------- */
 
@@ -426,35 +428,4 @@ a.btn {
 	border: 1px solid #ccc;
 	border-radius: 1px;
 	left: 5px
-}
-
-/* position of see more button */
-.cs-style-3 figcaption a {
-	position: absolute;
-	bottom: 12px;
-	right: 20px;
-}
-
-/* picture size */
-.grid figure img {
-	max-width:100%;
-	display: block;
-	position: relative;
-	transform: translate(0, -50px);
-}
-
-/* text under picture */
-.cs-style-3 figcaption {
-	height: 120px;
-	width: 100%;
-	top: auto;
-}
-
-/* figure transform on hover */
-.cs-style-3 figcaption {
-	opacity: 1;
-	-webkit-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	transform: display(0px);
 }
