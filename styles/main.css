@@ -49,11 +49,11 @@ a.coral-link:hover:after {
 	background: #ee5254;
 }
 
-
 /* header style */
 .header {
 	font-size: 24px;
 	line-height: 10px;
+	margin-left: 100px;
 }
 
 /* header underline */
@@ -61,6 +61,7 @@ a.coral-link:hover:after {
 	border-bottom: 3px solid #ee5254;
 	width: 20px;
 	margin-bottom: 60px;
+	margin-left: 100px;
 
 }
 
@@ -106,83 +107,53 @@ a.btn:hover, a.btn:focus{
 }
 
 /* -------------------- The Nav Bar --------------------*/
-/* navbar-right padding */
-.navbar-right {
-	padding-right: 100px;
-}
-
-/* padding between links */
-.navbar-right li a.name {
-	padding-left: 40px;
-}
-
-/* padding on the right of the links */
-.nav {
-	padding-right: 25px;
-}
 
 /* navbar box color*/
-.navbar-default {
+.navbar {
     background-color: rgba(250, 250, 250, 0.96);
     border-color: rgba(250, 250, 250, 0.96);
 }
 
 /* title Jonas Kofod */
-.navbar-default .navbar-brand {
+.navbar-brand {
 	font-family: "Montserrat";
 	font-size: 10px;
 	color: #999;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	text-transform: uppercase;
 	padding-left: 40px;
 	font-weight: 400;
 }
 /* change of color of title Jonas Kofod when hover and focus */
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar-brand:hover,
+.navbar-brand:focus {
 	color: #ee5254
 }
 
-/* link */
-.navbar-default .navbar-nav > li > a {
+.nav {
+	padding-right: 40px;
+}
+
+.navbar-custom .nav .nav-link {
   color: #999;
 	font-family: "Montserrat";
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 10px;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 }
 
-/* no change of color when hover or focus*/
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #999;
-}
-
-/* change to red when hover */
-.navbar-default .navbar-nav > li > a:hover{
-    color: #ee5254;
-}
-
-/* say hello no change of color when hover or focus*/
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #999;
-    background-color: rgba(250, 250, 250, 0.96);
-}
-
-/* say hello turns red when hover */
-.navbar-default .navbar-nav > .active > a:hover{
-  color: #ee5254;
-  background-color: rgba(250, 250, 250, 0.96);
+.navbar-custom .nav .nav-link:hover,
+.navbar-custom .nav .nav-link:focus {
+	color: #ee5254
 }
 
 /* -------------------- Intro Section --------------------*/
 #intro {
-	margin: 150px 0px 150px 0px;
+	margin: 150px 0px 150px 300px;
 }
 
-.fade {
+.intro {
 	position: relative;
 	opacity: 2;
 	font-size: 22px;
@@ -198,6 +169,7 @@ a.btn:hover, a.btn:focus{
 #projects {
   margin-bottom: 100px;
   margin-left: 0px;
+	padding-top: 56px;
 }
 
 /* gird for the pictures */
@@ -216,12 +188,6 @@ a.btn:hover, a.btn:focus{
 	margin: 1px
 	padding: 0px;
 	text-align: left;
-	position: relative;
-}
-
-/* picture text slides up*/
-.grid figure {
-	margin: 0;
 	position: relative;
 }
 
@@ -251,7 +217,6 @@ a.btn:hover, a.btn:focus{
 /* unordered list tags */
 ul.tags{
 	list-style-type: none;
-	margin: 0px;
 	padding: 0px;
 }
 
@@ -263,6 +228,7 @@ ul.tags{
 	border: 1px solid #ccc;
 	border-radius: 1px;
 	left: 5px;
+	bottom: 10px;
 }
 
 /* position of see more button */
@@ -304,7 +270,6 @@ ul.tags{
 	opacity: 1;
 }
 
-
 /* ------- margin to sections -------- */
 
 /* margin on courses */
@@ -312,6 +277,7 @@ ul.tags{
   margin-top: 150px;
   margin-bottom: 100px;
   margin-left: 0px;
+	padding-top: 56px;
 }
 
 /* courses header styling */
@@ -323,6 +289,7 @@ p.courses-header {
   color: #333;
 	line-height: 30px;
   padding-bottom: 10px;
+	margin-left: 100px;
 }
 
 p.status-courses {
@@ -332,6 +299,7 @@ p.status-courses {
 	font-size: 16px;
 	line-height: 18px;
 	color: #333;
+	margin-left: 100px;
 }
 
 /* unordered list courses */
@@ -344,6 +312,7 @@ ul.courses {
   font-weight: 200;
   font-size: 16px;
   color: #333;
+	margin-left: 100px;
 }
 
 /* space between list items */
@@ -368,6 +337,7 @@ ul.halfdone-courses{
   font-weight: 200;
   font-size: 16px;
   color: #333;
+	margin-left: 100px;
 }
 
 /* space between list items */
@@ -385,6 +355,8 @@ ul.halfdone-courses li:before {
 	margin-top: 150px;
   margin-bottom: 300px;
   margin-left: 0px;
+	padding-top: 56px;
+
 }
 
 /* ------------- Mobile phones --------------- */
@@ -392,8 +364,8 @@ ul.halfdone-courses li:before {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
-    padding-right:60px;
-    padding-left:60px;
+    padding-right:0px;
+    padding-left:0px;
 }
 
 /* picture text in the grid */
@@ -428,4 +400,8 @@ a.btn {
 	border: 1px solid #ccc;
 	border-radius: 1px;
 	left: 5px
+}
+
+#nav_right {
+    display: none;
 }
