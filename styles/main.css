@@ -62,7 +62,6 @@ a.coral-link:hover:after {
 	width: 20px;
 	margin-bottom: 60px;
 	margin-left: 100px;
-
 }
 
 /* sub-header of projects styling */
@@ -158,7 +157,6 @@ a.btn:hover, a.btn:focus{
 	opacity: 2;
 	font-size: 22px;
 	line-height: 36px;
-	padding: 0px 30px;
 	font-family: "Source Sans Pro",sans-serif;
 	font-style: normal;
 	font-weight: 100;
@@ -274,8 +272,8 @@ ul.tags{
 
 /* margin on courses */
 #courses {
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: 0px;
 	padding-top: 56px;
 }
@@ -356,7 +354,6 @@ ul.halfdone-courses li:before {
   margin-bottom: 300px;
   margin-left: 0px;
 	padding-top: 56px;
-
 }
 
 /* ------------- Mobile phones --------------- */
@@ -364,8 +361,6 @@ ul.halfdone-courses li:before {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
-    padding-right:0px;
-    padding-left:0px;
 }
 
 /* picture text in the grid */
@@ -402,6 +397,104 @@ a.btn {
 	left: 5px
 }
 
+#intro {
+	margin: 100px 0px 50px 20px;
+}
+
+
+#sayhello {
+	margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#projects {
+  margin-bottom: 50px;
+}
+
+.intro {
+	position: relative;
+	opacity: 2;
+	font-size: 18px;
+	line-height: 34px;
+	font-family: "Source Sans Pro",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+
+.navbar-brand {
+	font-family: "Montserrat";
+	font-size: 8px;
+	color: #999;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-left: 20px;
+	font-weight: 400;
+}
+
 #nav_right {
     display: none;
+}
+
+/* header style */
+.header {
+	font-size: 20px;
+	line-height: 10px;
+	margin-left: 20px;
+}
+
+/* header underline */
+.underline {
+	border-bottom: 3px solid #ee5254;
+	width: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+/* courses header styling */
+p.courses-header {
+  font-family: "Source Sans Pro",sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 100;
+  color: #333;
+	line-height: 30px;
+  padding-bottom: 10px;
+	margin-left: 20px;
+}
+
+p.status-courses {
+	font-family: "Source Sans Pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #333;
+	margin-left: 20px;
+}
+
+/* unordered list courses */
+ul.courses {
+	list-style-type: none;
+  margin: 0px;
+	padding: 10px;
+  font-family: "Source Sans Pro",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: #333;
+	margin-left: 20px;
+}
+
+/* unordered list of halfdone courses */
+ul.halfdone-courses{
+  list-style: none;
+  position: relative;
+  margin: 0px;
+	padding: 10px;
+  font-family: "Source Sans Pro",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: #333;
+	margin-left: 20px;
 }
