@@ -184,8 +184,7 @@ a.btn:hover, a.btn:focus{
 .grid li {
 	display: inline-block;
 	width: 500px;
-	margin: 1px
-	padding: 0px;
+	margin: 1px;
 	text-align: left;
 	position: relative;
 }
